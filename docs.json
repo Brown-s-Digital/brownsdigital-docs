@@ -1,0 +1,36 @@
+{
+  "theme": "almond",
+  "name": "Brown's Digital",
+  "colors": {
+    "primary": "#D97706",
+    "light": "#F59E0B",
+    "dark": "#B45309"
+  },
+  "logo": {
+    "light": "/logo/light.svg",
+    "dark": "/logo/dark.svg"
+  },
+  "favicon": "/favicon.svg",
+  "navbar": {
+    "links": [
+      {
+        "href": "mailto:support@brownsdigital.com",
+        "label": "Support"
+      }
+    ],
+    "primary": {
+      "type": "button",
+      "label": "Dashboard",
+      "href": "https://app.brownsdigital.com"
+    }
+  },
+  "footer": {
+    "socials": {
+      "x": "https://x.com/brownsdigital",
+      "linkedin": "https://linkedin.com/company/brownsdigital"
+    }
+  },
+  "navigation": {
+    "groups": []
+  }
+}
