@@ -85,7 +85,41 @@
   "navigation": {
     "products": [
       {
-        "product": "B"
+        "product": "Brown's Digital",
+        "groups": [
+          {
+            "group": "Information",
+            "pages": [
+              "welcome"
+            ]
+          },
+          {
+            "group": "Builder",
+            "pages": [
+              {
+                "group": "Structure",
+                "pages": [
+                  "untitled-page-3"
+                ]
+              }
+            ]
+          },
+          {
+            "group": "Studio",
+            "pages": []
+          },
+          {
+            "group": "Welcome to Brown's Digital",
+            "pages": [
+              "untitled-page",
+              "untitled-page-2"
+            ]
+          },
+          {
+            "group": "Explainers",
+            "pages": []
+          }
+        ]
       }
     ]
   },
