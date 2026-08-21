@@ -7,12 +7,12 @@
     "dark": "#B45309"
   },
   "logo": {
-    "light": "/images/Brown'sDigitalLogonoBackground.png",
-    "dark": "/images/Brown'sDigitalLogonoBackground.png"
+    "light": "/images/Logo.png",
+    "dark": "/images/Logo.png"
   },
   "favicon": {
-    "light": "/images/Brown'sDigitalLogonoBackground.png",
-    "dark": "/images/Brown'sDigitalLogonoBackground.png"
+    "light": "/images/Logo.png",
+    "dark": "/images/Logo.png"
   },
   "navbar": {
     "links": [
