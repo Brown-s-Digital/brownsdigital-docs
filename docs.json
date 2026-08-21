@@ -8,7 +8,8 @@
   },
   "logo": {
     "light": "/images/Logo.png",
-    "dark": "/images/Logo.png"
+    "dark": "/images/Logo.png",
+    "href": "https://brownsdigital.org/"
   },
   "favicon": {
     "light": "/images/Logo.png",
