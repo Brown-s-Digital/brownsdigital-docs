@@ -91,7 +91,10 @@
           {
             "group": "Information",
             "pages": [
-              "welcome"
+              "welcome",
+              "faq",
+              "acknowledgements",
+              "changelog"
             ]
           },
           {
@@ -112,8 +115,8 @@
           {
             "group": "Welcome to Brown's Digital",
             "pages": [
-              "untitled-page",
-              "untitled-page-2"
+              "welcome/onboarding",
+              "welcome/create-a-site"
             ]
           },
           {
