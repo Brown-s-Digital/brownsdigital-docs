@@ -2,9 +2,9 @@
   "theme": "almond",
   "name": "Brown's Digital",
   "colors": {
-    "primary": "#D97706",
-    "light": "#F59E0B",
-    "dark": "#B45309"
+    "primary": "#141414",
+    "light": "#e9e9e9",
+    "dark": "#111111"
   },
   "logo": {
     "light": "/images/Logo.png",
@@ -29,11 +29,118 @@
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/brownsdigital",
-      "linkedin": "https://linkedin.com/company/brownsdigital"
-    }
+      "discord": "https://discord.gg/KDT49zvUhH",
+      "website": "https://brownsdigital.org/"
+    },
+    "links": [
+      {
+        "header": "Brown's Digital",
+        "items": [
+          {
+            "label": "Homepage",
+            "href": "https://brownsdigital.org/"
+          },
+          {
+            "label": "Studio",
+            "href": "https://studio.brownsdigital.org/"
+          }
+        ]
+      },
+      {
+        "header": "Support",
+        "items": [
+          {
+            "label": "Discord Server",
+            "href": "https://discord.gg/KDT49zvUhH"
+          },
+          {
+            "label": "Help Center",
+            "href": "https://help.brownsdigital.org/"
+          },
+          {
+            "label": "Email us",
+            "href": "mailto:support@brownsdigital.org"
+          }
+        ]
+      },
+      {
+        "header": "Policies",
+        "items": [
+          {
+            "label": "All policies",
+            "href": "https://brownsdigital.org/policies"
+          },
+          {
+            "label": "Terms of Service",
+            "href": "https://brownsdigital.org/policies/terms"
+          },
+          {
+            "label": "Privacy Policy",
+            "href": "https://brownsdigital.org/policies/privacy"
+          }
+        ]
+      }
+    ]
   },
   "navigation": {
-    "groups": []
+    "products": [
+      {
+        "product": "B"
+      }
+    ]
+  },
+  "background": {
+    "color": {
+      "dark": "#0e0e0e"
+    }
+  },
+  "icons": {
+    "library": "lucide"
+  },
+  "fonts": {
+    "heading": {
+      "family": "Inter"
+    },
+    "body": {
+      "family": "Inter"
+    }
+  },
+  "thumbnails": {
+    "fonts": {
+      "family": "Geist"
+    }
+  },
+  "styling": {
+    "eyebrows": "breadcrumbs",
+    "latex": true
+  },
+  "metadata": {
+    "timestamp": true
+  },
+  "contextual": {
+    "options": [
+      "copy",
+      "chatgpt",
+      "claude",
+      "aistudio",
+      "cursor"
+    ],
+    "display": "toc"
+  },
+  "search": {
+    "prompt": "Search..."
+  },
+  "markdown": {
+    "schema": true
+  },
+  "description": "Step-by-step guides, product updates, and more for Brown's Digital.",
+  "seo": {
+    "indexing": "all"
+  },
+  "errors": {
+    "404": {
+      "redirect": false,
+      "title": "Whoops, not found..."
+    }
   }
 }
