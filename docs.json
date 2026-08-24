@@ -7,13 +7,13 @@
     "dark": "#111111"
   },
   "logo": {
-    "light": "/images/Logo.png",
+    "light": "/images/documentationwordmarkgradient.png.png",
     "dark": "/images/Logo.png",
     "href": "https://brownsdigital.org/"
   },
   "favicon": {
-    "light": "/images/Logo.png",
-    "dark": "/images/Logo.png"
+    "light": "/images/favicon.svg",
+    "dark": "/images/favicon.svg"
   },
   "navbar": {
     "links": [
