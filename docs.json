@@ -7,8 +7,8 @@
     "dark": "#111111"
   },
   "logo": {
-    "light": "/images/documentation-wordmark-gradient.png",
-    "dark": "/images/documentationwordmarkwhite.png",
+    "light": "/images/documentation-wordmark-gradient.svg",
+    "dark": "/images/documentation-wordmark-white.svg",
     "href": "https://brownsdigital.org/"
   },
   "favicon": {
