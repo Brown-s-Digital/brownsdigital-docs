@@ -18,14 +18,14 @@
   "navbar": {
     "links": [
       {
-        "href": "mailto:support@brownsdigital.com",
+        "href": "mailto:support@brownsdigital.org",
         "label": "Support"
       }
     ],
     "primary": {
       "type": "button",
       "label": "Dashboard",
-      "href": "https://app.brownsdigital.com"
+      "href": "https://studio.brownsdigital.org/"
     }
   },
   "footer": {
