@@ -1,6 +1,6 @@
 {
   "theme": "almond",
-  "name": "Brown's Digital",
+  "name": "Browns Digital",
   "colors": {
     "primary": "#141414",
     "light": "#e9e9e9",
@@ -35,7 +35,7 @@
     },
     "links": [
       {
-        "header": "Brown's Digital",
+        "header": "Browns Digital",
         "items": [
           {
             "label": "Homepage",
@@ -86,7 +86,7 @@
   "navigation": {
     "products": [
       {
-        "product": "Brown's Digital",
+        "product": "Browns Digital",
         "groups": [
           {
             "group": "Information",
@@ -113,7 +113,7 @@
             "pages": []
           },
           {
-            "group": "Welcome to Brown's Digital",
+            "group": "Welcome to Browns Digital",
             "pages": [
               "welcome/onboarding",
               "welcome/create-a-site"
@@ -171,7 +171,7 @@
   "markdown": {
     "schema": true
   },
-  "description": "Step-by-step guides, product updates, and more for Brown's Digital.",
+  "description": "Step-by-step guides, product updates, and more for Browns Digital.",
   "seo": {
     "indexing": "all"
   },
