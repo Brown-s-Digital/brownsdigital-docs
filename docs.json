@@ -137,15 +137,15 @@
   },
   "fonts": {
     "heading": {
-      "family": "Inter"
+      "family": "system-ui"
     },
     "body": {
-      "family": "Inter"
+      "family": "system-ui"
     }
   },
   "thumbnails": {
     "fonts": {
-      "family": "Geist"
+      "family": "system-ui"
     }
   },
   "styling": {
