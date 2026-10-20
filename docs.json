@@ -32,55 +32,48 @@
   },
   "footer": {
     "socials": {
-      "discord": "https://discord.gg/KDT49zvUhH",
-      "website": "https://brownsdigital.org/"
+      "discord": "https://discord.gg/browns",
+      "website": "https://brownsdigital.org/",
+      "linkedin": "https://www.linkedin.com/company/brown-s-digital/",
+      "instagram": "https://www.instagram.com/brownsdigi",
+      "youtube": "https://www.youtube.com/@Brownsdigital"
     },
     "links": [
       {
-        "header": "Browns Digital",
+        "header": "Studio",
         "items": [
-          {
-            "label": "Homepage",
-            "href": "https://brownsdigital.org/"
-          },
-          {
-            "label": "Studio",
-            "href": "https://studio.brownsdigital.org/"
-          }
+          { "label": "Open Studio", "href": "https://studio.brownsdigital.org/" },
+          { "label": "Pricing", "href": "https://brownsdigital.org/?open=pricing" },
+          { "label": "Compare plans", "href": "https://brownsdigital.org/?open=pricing" },
+          { "label": "Catalog", "href": "https://brownsdigital.org/?open=products" },
+          { "label": "Create account", "href": "https://brownsdigital.org/auth?return=https%3A%2F%2Fstudio.brownsdigital.org%2F" }
         ]
       },
       {
-        "header": "Support",
+        "header": "Products",
         "items": [
-          {
-            "label": "Discord Server",
-            "href": "https://discord.gg/KDT49zvUhH"
-          },
-          {
-            "label": "Help Center",
-            "href": "https://help.brownsdigital.org/"
-          },
-          {
-            "label": "Email us",
-            "href": "mailto:support@brownsdigital.org"
-          }
+          { "label": "Systems", "href": "https://brownsdigital.org/?open=systems" },
+          { "label": "My Account", "href": "https://brownsdigital.org/my/" },
+          { "label": "Roadmap", "href": "https://brownsdigital.org/roadmap/" },
+          { "label": "Status", "href": "https://status.brownsdigital.org/" }
         ]
       },
       {
-        "header": "Policies",
+        "header": "Resources",
         "items": [
-          {
-            "label": "All policies",
-            "href": "https://brownsdigital.org/policies"
-          },
-          {
-            "label": "Terms of Service",
-            "href": "https://brownsdigital.org/policies/terms"
-          },
-          {
-            "label": "Privacy Policy",
-            "href": "https://brownsdigital.org/policies/privacy"
-          }
+          { "label": "Documentation", "href": "https://docs.brownsdigital.org/" },
+          { "label": "Help center", "href": "https://help.brownsdigital.org/" },
+          { "label": "Policies hub", "href": "https://brownsdigital.org/policies/" },
+          { "label": "Privacy", "href": "https://brownsdigital.org/policies/privacy/" },
+          { "label": "Terms", "href": "https://brownsdigital.org/policies/terms/" }
+        ]
+      },
+      {
+        "header": "Company",
+        "items": [
+          { "label": "Team", "href": "https://brownsdigital.org/?open=team" },
+          { "label": "Donate", "href": "https://brownsdigital.org/donate/" },
+          { "label": "Contact", "href": "mailto:info@brownsdigital.org" }
         ]
       }
     ]
