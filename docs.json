@@ -17,15 +17,17 @@
   },
   "navbar": {
     "links": [
-      {
-        "href": "mailto:support@brownsdigital.org",
-        "label": "Support"
-      }
+      { "label": "Home", "href": "https://brownsdigital.org/" },
+      { "label": "Systems", "href": "https://brownsdigital.org/?open=systems" },
+      { "label": "Catalog", "href": "https://brownsdigital.org/?open=products" },
+      { "label": "Pricing", "href": "https://brownsdigital.org/?open=pricing" },
+      { "label": "Team", "href": "https://brownsdigital.org/?open=team" },
+      { "label": "Docs", "href": "https://docs.brownsdigital.org/" }
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://studio.brownsdigital.org/"
+      "label": "Sign in",
+      "href": "https://brownsdigital.org/auth"
     }
   },
   "footer": {
