@@ -1,0 +1,9 @@
+---
+title: "API action"
+---
+
+The API action block sends a GET or POST when a visitor taps the button. The call runs in that visitor's browser, not on Browns Digital servers.
+
+The URL has to be HTTPS. Studio does not limit which host you can enter, so the button can call any public HTTPS API. The request omits the visitor's cookies, and Cookie and Authorization headers are dropped.
+
+Use a public webhook or gateway. Do not point the block at an API that trusts the visitor's cookies or ignores Origin. A broad URL can make visitors call an API they did not choose.
