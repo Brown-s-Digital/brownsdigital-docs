@@ -130,19 +130,6 @@
   "icons": {
     "library": "lucide"
   },
-  "fonts": {
-    "heading": {
-      "family": "system-ui"
-    },
-    "body": {
-      "family": "system-ui"
-    }
-  },
-  "thumbnails": {
-    "fonts": {
-      "family": "system-ui"
-    }
-  },
   "styling": {
     "eyebrows": "breadcrumbs",
     "latex": true
