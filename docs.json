@@ -72,6 +72,7 @@
         "header": "Company",
         "items": [
           { "label": "Team", "href": "https://brownsdigital.org/?open=team" },
+          { "label": "Company information", "href": "https://brownsdigital.org/company/" },
           { "label": "Donate", "href": "https://brownsdigital.org/donate/" },
           { "label": "Contact", "href": "mailto:info@brownsdigital.org" }
         ]
