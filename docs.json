@@ -11,10 +11,7 @@
     "dark": "/images/documentation-wordmark-white.svg",
     "href": "https://brownsdigital.org/"
   },
-  "favicon": {
-    "light": "/images/favicon.svg",
-    "dark": "/images/favicon.svg"
-  },
+  "favicon": "/favicon.ico",
   "navbar": {
     "links": [
       { "label": "Home", "href": "https://brownsdigital.org/" },
