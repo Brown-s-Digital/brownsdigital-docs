@@ -123,10 +123,6 @@
               "welcome/onboarding",
               "welcome/create-a-site"
             ]
-          },
-          {
-            "group": "Explainers",
-            "pages": []
           }
         ]
       }
