@@ -109,7 +109,13 @@
           },
           {
             "group": "Studio",
-            "pages": []
+            "pages": [
+              "studio/builder",
+              "studio/publishing",
+              "studio/credits",
+              "studio/custom-domains",
+              "studio/plans"
+            ]
           },
           {
             "group": "Welcome to Browns Digital",

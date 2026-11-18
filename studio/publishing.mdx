@@ -1,0 +1,17 @@
+---
+title: "Preview and publish"
+icon: "rocket"
+---
+
+Studio publishes in two steps: staging (preview), then promote to live.
+
+1. Edit the site in the [visual builder](/studio/builder) and save.
+2. Publish to **staging**. Studio writes a preview at a URL like `https://studio.brownsdigital.org/s/{slug}/staging/`.
+3. Open that URL, review the site, fix anything that needs fixing, and publish to staging again if you change the build.
+4. **Promote** staging to production when the preview is right. Live sites use `{slug}.brownsdigital.app` (or the hostname Studio shows).
+
+Your web address (slug) locks after the first publish. If promote fails, the previous live site stays until a promote succeeds.
+
+Credits for staging and promote default to **0** today; Staff can set an account override. See [Credits](/studio/credits).
+
+Step-by-step for a first site: [Create a Site](/welcome/create-a-site).
