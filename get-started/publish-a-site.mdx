@@ -1,0 +1,106 @@
+---
+title: "Publish a site"
+description: "The Studio screens for creating a preview and pushing a site live, including the site address fields."
+---
+
+{/* HOLD: publish not confirmed working, see N66. Do not publish this page as a working how-to until Robert says N66 is fixed. See PUBLISH-GATE.md. */}
+
+This page describes the publish screens in Studio. It does not confirm that creating a preview or pushing a site live works today.
+
+The Publish dialog has two stages on the screen. First it offers a **preview**. Then it offers **push to live**. The dialog says: "Preview first. Live only when you push."
+
+*Last checked: 21 November 2026.*
+
+{/* PENDING: credits and pricing wording, awaiting Robert. See PUBLISH-GATE.md. */}
+
+## Open the Publish dialog
+
+1. Open Studio and select the site.
+2. Open **Console** in the sidebar (it is called **Home** on a phone).
+3. Choose **Create preview** or, if a preview already exists, **Update preview**.
+
+You can also search Studio and choose **Publish…**.
+
+{/* IMAGE TO CAPTURE: images/get-started/studio-console-publish-actions.png
+    What to capture: Console publish panel for a fictional site.
+    Status: to capture */}
+<Frame caption="The Console publish actions: Create preview or Update preview, and Push to live or Update live.">
+  <img
+    src="/images/get-started/studio-console-publish-actions.png"
+    alt="Console panel for a fictional site, with Preview and Live addresses and buttons labelled Create preview and Push to live."
+  />
+</Frame>
+
+## Choose a site address
+
+The first time the Publish dialog asks for a **Site address**, the screen says that preview and live share this address, and that you cannot change it after the first publish.
+
+1. Enter a short address using letters, numbers, and dashes.
+2. Use at least two characters, and at most 48 characters.
+3. Avoid names that Studio has reserved. If you pick one, Studio asks you to try another.
+
+The dialog shows the start of the Browns Digital address, then your site address. The form in the current product is `https://studio.brownsdigital.org/s/` followed by your site address.
+
+{/* VERIFY LIVE before publish */}
+
+{/* IMAGE TO CAPTURE: images/get-started/studio-publish-dialog.png
+    What to capture: Publish dialog with a fictional harbor-coffee address.
+    Status: to capture */}
+<Frame caption="The Publish dialog, with Draft, Preview, and Live, and a site address field.">
+  <img
+    src="/images/get-started/studio-publish-dialog.png"
+    alt="Publish dialog headed Publish, with the line Preview first. Live only when you push. Tabs for Draft, Preview and Live, and a Site address field."
+  />
+</Frame>
+
+## Create a preview
+
+1. In the Publish dialog, stay on **Preview** or choose that tab.
+2. Choose **Create preview** (or **Update preview** if one already exists).
+3. If the preview is created, the dialog shows **Preview ready**.
+4. The dialog then offers **Open** to view it, or **Copy link** to copy the preview address.
+
+The preview address form in the current product looks like this:
+
+`https://studio.brownsdigital.org/s/your-site-address/staging/`
+
+{/* VERIFY LIVE before publish */}
+
+The screen treats this as a preview link, not your live site.
+
+## Push the site live
+
+The Console button **Push to live** stays unavailable until a preview exists (or the site is already live).
+
+1. On Console, choose **Push to live**. If the site is already live, this button says **Update live**.
+2. In the Publish dialog, review the live address, then choose **Push to live** or **Update live**.
+3. If the live push is completed, the dialog shows **Live**.
+4. The dialog then offers **Open** or **Copy link**.
+
+The live Browns Digital address form in the current product looks like this:
+
+`https://studio.brownsdigital.org/s/your-site-address/`
+
+{/* VERIFY LIVE before publish */}
+
+You can add your own domain later. See [Connect a custom domain](/get-started/connect-a-custom-domain). The domain screens expect the site to have been pushed live first.
+
+## If something goes wrong
+
+- If you have not entered a site address, Studio says: "Choose a site address first."
+- If the address is too short, Studio says: "Choose a longer site address."
+- If the address is reserved, Studio says: "That address is reserved -- try another."
+- If another customer already has that address, Studio asks you to choose a different one.
+- If one of your other sites already uses that address, Studio asks you to rename one of them or pick a different address.
+- If you try to change the address after the first publish, Studio tells you the current address cannot be changed.
+- If you try to go live before a preview exists, the screens ask you to create the preview first from Console.
+- If a page is too large, Studio asks you to reduce the size and try again.
+
+{/* PENDING: credits and pricing wording, awaiting Robert. Do not describe publishing limits until the wording is approved. See PUBLISH-GATE.md. */}
+
+## Related pages
+
+- [Getting started in 5 minutes](/get-started/getting-started)
+- [Create a site](/get-started/create-a-site)
+- [Connect a custom domain](/get-started/connect-a-custom-domain)
+- [Contact](/support/contact)

@@ -1,0 +1,116 @@
+---
+title: "Connect a custom domain"
+description: "Point your own web address at a Studio site, prove ownership, and check that it is live."
+---
+
+A custom domain is a web address you already own, such as `www.yourbusiness.co.za`. You can keep the Browns Digital address as well.
+
+SSL is included. SSL is the secure connection that shows a padlock in the browser and uses `https`.
+
+*Last checked: 20 November 2026.*
+
+{/* PENDING: credits and pricing wording, awaiting Robert. Custom domains are limited to some accounts. Do not name plans or costs here until that wording is approved. See PUBLISH-GATE.md. */}
+
+## Before you start
+
+1. The domain screens expect the site to have been pushed live first. If you skip this, Studio warns you to publish to production before opening the custom domain. Visitors who try the domain too early may see that the site has not been published yet. See [Publish a site](/get-started/publish-a-site) for those screens.
+
+{/* HOLD: publish not confirmed working, see N66. Do not publish this page as a working how-to until Robert says N66 is fixed. See PUBLISH-GATE.md. */}
+2. Have access to the place where you manage DNS for the domain. DNS is the list of records that tells the internet where your domain should go.
+
+## Open Domains in Settings
+
+1. Open Studio and select the site.
+2. Open **Settings** in the sidebar.
+3. Find the **Domains** section.
+
+You will see your Browns Digital address. That address stays available even after you connect a custom domain.
+
+{/* IMAGE TO CAPTURE: images/get-started/studio-settings-domains-connect.png
+    What to capture: Domains section before a custom domain is added, fictional address only.
+    Status: to capture */}
+<Frame caption="The Domains section in Settings, before a custom domain is added.">
+  <img
+    src="/images/get-started/studio-settings-domains-connect.png"
+    alt="Settings section headed Domains, showing the Browns Digital address and a Custom Domain block with a Connect domain button."
+  />
+</Frame>
+
+## Request the domain
+
+1. Choose **Connect domain**.
+2. Enter the domain, for example `yourbusiness.co.za` or `www.yourbusiness.co.za`.
+3. Choose **Continue**.
+
+Studio may adjust a bare domain to the `www` form. The public live address is the `www` address.
+
+You cannot connect a domain that is part of the Browns Digital platform.
+
+## Add the DNS records
+
+Studio shows the exact records to add. There are two required records:
+
+1. An **ownership TXT** record. A TXT record is a short text value that proves you control the domain. The host to use is `_bd-verify`. Enter only that host. Your DNS host will complete it to `_bd-verify.yourdomain`.
+2. A **www CNAME** record. A CNAME record points one name at another. Point `www` at the host name Studio displays.
+
+The `www` address is the live address visitors should use. Pointing the bare domain (often shown as `@`) is optional, and you can do that later.
+
+If your DNS host can proxy records, turn the proxy off for these CNAME records. Changes can take up to an hour.
+
+{/* IMAGE TO CAPTURE: images/get-started/studio-settings-domains-dns-records.png
+    What to capture: DNS cards with a fictional domain and a clearly fake ownership value.
+    Status: to capture */}
+<Frame caption="The DNS records Studio asks you to add: an ownership TXT record and a www CNAME record.">
+  <img
+    src="/images/get-started/studio-settings-domains-dns-records.png"
+    alt="Domains section listing a TXT host _bd-verify and a CNAME from www to the host Studio displays, with a Verify DNS button."
+  />
+</Frame>
+
+## Verify the domain
+
+1. After you have added the records, choose **Verify DNS**.
+2. If Studio still cannot see the records, wait and try again. DNS can take up to an hour.
+3. When ownership is proved, Studio may say it is finishing the connection. This can take a few minutes. Use **Refresh status** if you need an update.
+
+The progress list has three steps: **DNS**, **SSL**, and **Live**.
+
+{/* IMAGE TO CAPTURE: images/get-started/studio-settings-domains-connected.png
+    What to capture: connected fictional domain with DNS, SSL, and Live steps.
+    Status: to capture */}
+<Frame caption="A custom domain after setup, with DNS, SSL, and Live progress.">
+  <img
+    src="/images/get-started/studio-settings-domains-connected.png"
+    alt="Domains section showing a connected fictional domain, with steps labelled DNS, SSL, and Live, and a Refresh status button."
+  />
+</Frame>
+
+When the domain is connected, visitors should use the `www` address, for example `https://www.yourbusiness.co.za`.
+
+## Remove a domain
+
+1. In the same Domains section, choose **Remove**.
+2. Confirm the removal.
+
+The site stays live on its Browns Digital address.
+
+## If something goes wrong
+
+- If the domain is not valid, Studio says: "Enter a valid domain, like www.example.co.za".
+- If the domain belongs to Browns Digital, Studio will not connect it.
+- If the domain is already used on another site, remove it there first or pick a different domain.
+- If the domain is still waiting to be verified on another site, wait or pick a different domain.
+- If you choose Verify before requesting a domain, Studio says: "Request a domain first."
+- If the ownership record is missing, Studio tells you it could not find the TXT record at `_bd-verify` plus your domain, and asks you to check the host and value.
+- If the ownership record is present but `www` does not point at Browns Digital yet, Studio tells you what to add, then asks you to wait and try again.
+- If DNS is verified but the connection is not finished, wait a few minutes and use **Refresh status**.
+- If you open the domain before the site is live, you may see that the domain is not connected yet, or that the site has not been published to production.
+
+{/* PENDING: credits and pricing wording, awaiting Robert. See PUBLISH-GATE.md. */}
+
+## Related pages
+
+- [Publish a site](/get-started/publish-a-site)
+- [Create a site](/get-started/create-a-site)
+- [Getting started in 5 minutes](/get-started/getting-started)
+- [Contact](/support/contact)
