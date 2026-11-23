@@ -1,0 +1,33 @@
+---
+title: "API action"
+description: "Use the API action block to send a GET or POST request when a visitor taps a button."
+---
+
+The API action block sends a GET or POST request when a visitor taps the button. GET and POST are two common ways a browser asks another service to do something or return data.
+
+The request runs in that visitor's browser, not on Browns Digital servers.
+
+*Last checked: 20 November 2026.*
+
+{/* IMAGE TO CAPTURE: images/reference/studio-api-action-block.png
+    What to capture: inspector for an API action block, fictional https URL only, no keys.
+    Status: to capture */}
+<Frame caption="The API action block in the builder inspector.">
+  <img
+    src="/images/reference/studio-api-action-block.png"
+    alt="Builder inspector for an API action block, with fields for the request method and a URL starting with https."
+  />
+</Frame>
+
+## What you need to know
+
+- The URL must start with `https`.
+- Studio does not limit which host you can enter, so the button can call any public HTTPS address.
+- The request does not include the visitor's cookies. Cookie and Authorization headers are dropped.
+
+Use a public webhook or gateway. A webhook is an address that another service gives you so it can receive a simple request. Do not point the block at an address that trusts the visitor's cookies, or that ignores where the request came from. A broad URL can make visitors call an address they did not choose.
+
+## Related pages
+
+- [Create a site](/get-started/create-a-site)
+- [Contact](/support/contact)

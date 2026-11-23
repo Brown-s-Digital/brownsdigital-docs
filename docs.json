@@ -85,6 +85,29 @@
         "product": "Browns Digital",
         "groups": [
           {
+            "group": "Get started",
+            "pages": [
+              "get-started/welcome",
+              "get-started/getting-started",
+              "get-started/account-onboarding",
+              "get-started/create-a-site",
+              "get-started/publish-a-site",
+              "get-started/connect-a-custom-domain"
+            ]
+          },
+          {
+            "group": "Reference",
+            "pages": [
+              "reference/api-action"
+            ]
+          },
+          {
+            "group": "Help and support",
+            "pages": [
+              "support/contact"
+            ]
+          },
+          {
             "group": "Information",
             "pages": [
               "welcome",
