@@ -43,9 +43,10 @@
         "header": "Studio",
         "items": [
           { "label": "Open Studio", "href": "https://studio.brownsdigital.org/" },
-          { "label": "Pricing", "href": "https://brownsdigital.org/?open=pricing" },
-          { "label": "Compare plans", "href": "https://brownsdigital.org/?open=pricing" },
-          { "label": "Catalog", "href": "https://brownsdigital.org/?open=products" },
+          {
+            "label": "Catalog",
+            "href": "https://brownsdigital.org/?open=products"
+          },
           { "label": "Create account", "href": "https://brownsdigital.org/auth?return=https%3A%2F%2Fstudio.brownsdigital.org%2F" }
         ]
       },
@@ -62,7 +63,7 @@
         "header": "Resources",
         "items": [
           { "label": "Documentation", "href": "https://docs.brownsdigital.org/" },
-          { "label": "Help center", "href": "https://help.brownsdigital.org/" },
+          { "label": "Help centre", "href": "https://help.brownsdigital.org/" },
           { "label": "Policies hub", "href": "https://brownsdigital.org/policies/" },
           { "label": "Privacy", "href": "https://brownsdigital.org/policies/privacy/" },
           { "label": "Terms", "href": "https://brownsdigital.org/policies/terms/" }
@@ -114,7 +115,8 @@
               "faq",
               "acknowledgements",
               "changelog"
-            ]
+            ],
+            "hidden": true
           },
           {
             "group": "Builder",
@@ -131,22 +133,26 @@
                   "builder/conversion/api-action"
                 ]
               }
-            ]
+            ],
+            "hidden": true
           },
           {
             "group": "Studio",
-            "pages": []
+            "pages": [],
+            "hidden": true
           },
           {
             "group": "Welcome to Browns Digital",
             "pages": [
               "welcome/onboarding",
               "welcome/create-a-site"
-            ]
+            ],
+            "hidden": true
           },
           {
             "group": "Explainers",
-            "pages": []
+            "pages": [],
+            "hidden": true
           }
         ]
       }
@@ -162,18 +168,14 @@
   },
   "styling": {
     "eyebrows": "breadcrumbs",
-    "latex": true
+    "latex": false
   },
   "metadata": {
     "timestamp": true
   },
   "contextual": {
     "options": [
-      "copy",
-      "chatgpt",
-      "claude",
-      "aistudio",
-      "cursor"
+      "copy"
     ],
     "display": "toc"
   },
@@ -183,7 +185,7 @@
   "markdown": {
     "schema": true
   },
-  "description": "Step-by-step guides, product updates, and more for Browns Digital.",
+  "description": "Step-by-step guides and product updates for Browns Digital.",
   "seo": {
     "indexing": "all"
   },
@@ -192,5 +194,23 @@
       "redirect": false,
       "title": "Whoops, not found..."
     }
-  }
+  },
+  "redirects": [
+    {
+      "source": "/welcome",
+      "destination": "/get-started/welcome"
+    },
+    {
+      "source": "/welcome/onboarding",
+      "destination": "/get-started/account-onboarding"
+    },
+    {
+      "source": "/welcome/create-a-site",
+      "destination": "/get-started/create-a-site"
+    },
+    {
+      "source": "/builder/conversion/api-action",
+      "destination": "/reference/api-action"
+    }
+  ]
 }
