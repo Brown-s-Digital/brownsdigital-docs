@@ -103,7 +103,8 @@
                 "group": "Conversion",
                 "pages": [
                   "builder/conversion/api-action",
-                  "builder/conversion/whatsapp-chat"
+                  "builder/conversion/whatsapp-chat",
+                  "builder/conversion/paystack-buy"
                 ]
               }
             ]

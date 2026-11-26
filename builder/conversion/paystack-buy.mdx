@@ -1,0 +1,41 @@
+---
+title: "Paystack buy"
+description: "Add a Buy section that opens a Paystack payment link or an on-page checkout popup with your public key."
+---
+
+The **Paystack buy** block is a Conversion section for selling a product or collecting payment. Visitors check out on Paystack — Browns Digital never sees card details.
+
+## Add the block
+
+1. Open a page in the [visual builder](/studio/builder).
+2. Add a block from **Conversion** → **Paystack buy**.
+3. Fill in the product copy, then connect Paystack with either a payment link or a public key. Save and [preview](/studio/publishing).
+
+## Connect Paystack
+
+Pick one path:
+
+| Path | What to enter |
+| --- | --- |
+| **Payment link** (recommended) | An `https://` Paystack payment link or page URL from your Paystack dashboard. The button opens it in a new tab. |
+| **Popup checkout** | Your **public** key (`pk_live_…` or `pk_test_…`) plus an amount in major units (for example `299` for R299). Visitors enter an email, then Paystack Inline opens. |
+
+If both are set, the payment link wins. Never paste a **secret** key (`sk_…`) — Studio strips those on sanitize, and they must stay on your own server.
+
+## Fields
+
+| Field | Notes |
+| --- | --- |
+| **Product / price label** | Shown on the card above the button. |
+| **Amount / currency** | Used for popup mode. Currency: ZAR, NGN, USD, GHS, or KES. |
+| **Success / fine print** | Status copy after a successful popup payment, plus a short trust note. |
+
+Published sites that use this block ship a small runtime (`bd-paystack.js`) and allow Paystack’s checkout scripts in CSP when needed.
+
+## Tips
+
+- Create the payment link or product in Paystack first, then paste into Studio.
+- Use test keys (`pk_test_…`) while you preview; switch to live before you go live.
+- For subscriptions or complex fulfilment, keep that logic in Paystack / your own backend — this block is the on-site buy CTA.
+
+Related: [API action](/builder/conversion/api-action), [WhatsApp chat](/builder/conversion/whatsapp-chat), [Preview and publish](/studio/publishing).
