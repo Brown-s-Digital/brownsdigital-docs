@@ -1,0 +1,31 @@
+---
+title: "WhatsApp chat"
+description: "Add a WhatsApp chat section or floating button that opens wa.me with your number and a pre-filled message."
+---
+
+The **WhatsApp chat** block opens a conversation in WhatsApp (app or WhatsApp Web) when a visitor taps the button. Studio builds a `wa.me` link from your number. The click stays on the visitor’s device — nothing is sent to Browns Digital servers.
+
+## Add the block
+
+1. Open a page in the [visual builder](/studio/builder).
+2. Add a block from **Conversion** → **WhatsApp chat**.
+3. Enter your WhatsApp number, optional pre-filled message, and button label. Save, then [preview](/studio/publishing).
+
+## Fields
+
+| Field | Notes |
+| --- | --- |
+| **WhatsApp number** | International format (`+27 82 123 4567`) or a South African mobile starting with `0` (Studio expands `0XXXXXXXXX` to `27XXXXXXXXX`). |
+| **Pre-filled message** | Optional text WhatsApp opens with. |
+| **Button** | Label on the green chat button. |
+| **Floating button** | `yes` adds a fixed corner FAB in addition to the section button. |
+
+Without a valid number the button stays off and the canvas shows a short hint to add one.
+
+## Tips
+
+- Use a number you actively monitor on WhatsApp Business or personal WhatsApp.
+- Keep the pre-filled message short and honest — visitors can edit it before sending.
+- One floating button per page is enough; turn floating off on extra WhatsApp sections if you stack more than one.
+
+Related: [API action](/builder/conversion/api-action) for HTTPS button calls, [Preview and publish](/studio/publishing).
