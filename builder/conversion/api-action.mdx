@@ -1,10 +1,34 @@
 ---
 title: "API action"
-description: "Send a browser GET or POST from a button to a public HTTPS API or webhook — safety notes included."
+description: "Add the API action conversion block — HTTPS GET or POST from the visitor’s browser, with field and safety notes."
 ---
 
-The API action block sends a GET or POST when a visitor taps the button. The call runs in that visitor's browser, not on Browns Digital servers.
+The **API action** block is a Conversion section: a heading, supporting text, and a button. When a visitor taps the button, their browser sends a GET or POST to the HTTPS URL you set. The call runs in that visitor’s browser, not on Browns Digital servers.
 
-The URL has to be HTTPS. Studio does not limit which host you can enter, so the button can call any public HTTPS API. The request omits the visitor's cookies, and Cookie and Authorization headers are dropped.
+## Add the block
 
-Use a public webhook or gateway. Do not point the block at an API that trusts the visitor's cookies or ignores Origin. A broad URL can make visitors call an API they did not choose.
+1. Open a page in the [visual builder](/studio/builder).
+2. Add a block from **Conversion**. API action nests under Contact-style conversion blocks in the library.
+3. Edit the copy and the request fields, then save and [preview](/studio/publishing) before you go live.
+
+## Request fields
+
+| Field | Notes |
+| --- | --- |
+| **Method** | `GET` or `POST`. |
+| **HTTPS URL** | Required. HTTP is not allowed. |
+| **Headers** | One `Name\|Value` per line. Cookie, Authorization, and Proxy-Authorization lines are dropped. |
+| **Body** | POST only — JSON or plain text. |
+| **Loading / success / error** | Status messages shown under the button. |
+
+Published sites that include this block ship a small runtime (`bd-request.js`) so the button can call your endpoint.
+
+## Safety
+
+Studio does not limit which host you can enter, so the button can call any public HTTPS API. The request omits the visitor’s cookies, and Cookie / Authorization headers are stripped from your configured list.
+
+Use a public webhook or gateway. Do not put secret API keys in the URL, headers, or body — visitors can read them in the page source. Do not point the block at an API that trusts the visitor’s cookies or ignores Origin. A broad URL can make visitors call an API they did not choose.
+
+## After you change it
+
+Save, then use the Publish modal’s **Preview** tab to confirm the button, messages, and endpoint behaviour before **Push to Live**. See [Preview and publish](/studio/publishing).

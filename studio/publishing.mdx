@@ -1,18 +1,43 @@
 ---
 title: "Preview and publish"
-description: "Publish to staging for preview, then promote to live on your brownsdigital.app address."
+description: "Use the Publish modal — Draft, Preview, and Live — plus how Studio fills SEO when you publish."
 icon: "rocket"
 ---
 
-Studio publishes in two steps: staging (preview), then promote to live.
+Studio uses one **Publish** modal for draft, preview, and live. Open it from the console, the builder, or the site toolbar.
+
+## Publish modal
+
+The modal has three tabs:
+
+| Tab | What it means |
+| --- | --- |
+| **Draft** | Keep editing. Continue to Preview when you are ready. |
+| **Preview** | Upload a private preview you can open and share. |
+| **Live** | Push the current build to the public site. |
+
+Preview first. Live only when you push.
 
 1. Edit the site in the [visual builder](/studio/builder) and save.
-2. Publish to **staging**. Studio writes a preview at a URL like `https://studio.brownsdigital.org/s/{slug}/staging/`.
-3. Open that URL, review the site, fix anything that needs fixing, and publish to staging again if you change the build.
-4. **Promote** staging to production when the preview is right. Live sites use `{slug}.brownsdigital.app` (or the hostname Studio shows).
+2. Open **Publish** and choose **Preview**. On first publish, set the **site address** (slug). Preview and live share that address.
+3. Use **Create Preview** or **Update Preview**. Open the preview URL Studio shows — typically `https://{slug}.app.brownsdigital.org/staging/`.
+4. When the preview looks right, switch to **Live** and **Push to Live** (or **Update Live** if the site is already public). Studio refreshes preview, then promotes to production.
 
-Your web address (slug) locks after the first publish. If promote fails, the previous live site stays until a promote succeeds.
+Live sites use `https://{slug}.app.brownsdigital.org/` (or the custom domain / hostname Studio shows). After a successful preview, the modal can offer **Push to Live** without leaving the sheet.
 
-Credits for staging and promote default to **0** today; Staff can set an account override. See [Credits](/studio/credits).
+Your site address locks after the first publish. If a live push fails, the previous live site stays until a push succeeds.
+
+Credits for preview and live default to **0** today; Staff can set an account override. See [Credits](/studio/credits).
+
+## SEO on publish
+
+When Studio builds preview or live HTML, each page gets resolved SEO:
+
+- **Title** and **meta description** — page SEO fields first, then site SEO from Settings. If those are empty, Studio fills from the page’s first visible section (heading plus supporting text), clipped for search snippets.
+- **Open Graph image** — page or site image, otherwise a suitable image from the page content when one exists.
+- **Structured data** — WebSite / WebPage JSON-LD on every page; Organization when a brand is present; FAQPage when the page has FAQ blocks.
+- **`llms.txt`** — published with the site for AI crawlers.
+
+Site Health still warns when a page has no custom meta description, even though publish can auto-fill from content. Write your own titles and descriptions in the builder’s SEO controls (or site Settings) when you want the exact snippet search engines and share previews show.
 
 Step-by-step for a first site: [Create a Site](/welcome/create-a-site).

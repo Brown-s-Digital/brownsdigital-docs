@@ -1,10 +1,10 @@
 ---
 title: "Create a Site"
-description: "Create a site in Studio, choose a template, preview on staging, then promote to live."
+description: "Create a site in Studio, choose a template, preview in the Publish modal, then push live."
 icon: "monitor"
 ---
 
-Create a site in Studio, preview it on staging, then promote it to live.
+Create a site in Studio, preview it, then push it live from the Publish modal.
 
 <Steps>
   <Step title="Start a site">
@@ -14,21 +14,21 @@ Create a site in Studio, preview it on staging, then promote it to live.
     Pick a template or a blank canvas. You can change pages and blocks later in the builder.
   </Step>
   <Step title="Name and web address">
-    Set the site name and **web address** (slug). That address becomes part of your staging and live URLs. It locks after the first publish, so choose carefully.
+    Set the site name and **web address** (slug). That address becomes part of your preview and live URLs. It locks after the first publish, so choose carefully.
   </Step>
   <Step title="Build in the canvas">
-    Open the site in the visual builder. Add pages and blocks, adjust look, and save as you go. For page structure and navigation, see [Navigation](/builder/structure/navigation).
+    Open the site in the visual builder. Add pages and blocks, adjust look, and save as you go. For page structure and navigation, see [Navigation](/builder/structure/navigation). Conversion blocks such as [API action](/builder/conversion/api-action) live under Builder.
   </Step>
-  <Step title="Preview on staging">
-    From Publish or the console, publish to **staging**. Open the staging URL Studio shows — typically `https://studio.brownsdigital.org/s/{slug}/staging/`. Staging is a private preview, not your live site.
+  <Step title="Preview">
+    Open **Publish**, choose the **Preview** tab, and create or update the preview. Open the URL Studio shows — typically `https://{slug}.app.brownsdigital.org/staging/`. Preview is not your live site.
   </Step>
-  <Step title="Promote to live">
-    When the preview looks right, **promote** (publish from staging to production). Live sites use `{slug}.brownsdigital.app` (or the hostname Studio shows). The previous live version stays until promote succeeds.
+  <Step title="Push to live">
+    When the preview looks right, switch to **Live** and **Push to Live**. Live sites use `https://{slug}.app.brownsdigital.org/` (or the hostname Studio shows). The previous live version stays until the push succeeds.
   </Step>
 </Steps>
 
 <Info>
-  Custom domains are available on plans that allow them. Connect a domain later from Studio or Account when your plan supports it. See [pricing](https://brownsdigital.org/#pricing).
+  Custom domains are available on plans that allow them. Connect a domain later from Studio or Account when your plan supports it. See [pricing](https://brownsdigital.org/#pricing). SEO titles and descriptions can be set in the builder; publish also auto-fills gaps from page content — [Preview and publish](/studio/publishing).
 </Info>
 
-Next: [The visual builder](/builder/structure/navigation).
+Next: [The visual builder](/studio/builder).
