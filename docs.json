@@ -52,7 +52,7 @@
           { "label": "Systems", "href": "https://brownsdigital.org/?open=systems" },
           { "label": "My Account", "href": "https://brownsdigital.org/my/" },
           { "label": "Roadmap", "href": "https://brownsdigital.org/roadmap/" },
-          { "label": "Changelog", "href": "https://brownsdigital.org/changelog/" },
+          { "label": "Changelog", "href": "https://docs.brownsdigital.org/changelog" },
           { "label": "Status", "href": "https://status.brownsdigital.org/" }
         ]
       },
